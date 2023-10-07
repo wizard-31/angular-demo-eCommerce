@@ -1,15 +1,15 @@
 <label>Server Name</label>
- <input
+ <!-- <input
   type = "text"
   class = "form-control"
-  (input) = "onServerNameUpdate($event)"> <!-- This uses 1-way binding, updating this updates everywhere-->
+  (input) = "onServerNameUpdate($event)"> This uses 1-way binding, updating this updates everywhere -->
 
 <input
   type = "text"
   class = "form-control"
   [(ngModel)]="serverName"> <!-- This uses 2-way binding, updating this won't have any effect on 1st input-->
 
-<p> {{ serverName }}</p>
+<!-- <p> {{ serverName }}</p> -->
 
 <button
   class="btn btn-primary"
