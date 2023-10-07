@@ -10,7 +10,7 @@ export class ServersComponent implements OnInit {
   allowNewServer:boolean = false;
   serverCreationStatus:string = 'No Server was created!';
   serverCount: number = 0;
-  serverName: string = "";
+  serverName: string = 'TestServer - 2 way binding';
 
 constructor() {
   setTimeout(() => {
