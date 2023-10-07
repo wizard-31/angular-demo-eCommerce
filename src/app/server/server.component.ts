@@ -6,5 +6,11 @@ import { Component } from '@angular/core'
 })
 
 export class ServerComponent {
+  serverName: string = 'DarkSide';
+  serverID: number = 7;
+
+  getServerStatus(): string {
+    return "Offline"
+  }
 
 }
