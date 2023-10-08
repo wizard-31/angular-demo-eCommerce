@@ -11,6 +11,7 @@ export class ServersComponent implements OnInit {
   serverCreationStatus:string = 'No Server was created!';
   serverCount: number = 0;
   serverName: string = 'Testserver';
+  serverCreated: boolean = false;
 
 constructor() {
   setTimeout(() => {
@@ -24,6 +25,7 @@ ngOnInit(): void {
 onCreateServer() {
   this.serverCreationStatus = 'A new Server was just created! with name ' + this.serverName;
   this.serverCount++;
+  this.serverCreated = true;
 }
 
 onServerNameUpdate(event:Event) {

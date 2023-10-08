@@ -1,23 +1,4 @@
 <!-- <p> Yo, this is Server </p> -->
-<!-- <p>Yo, the server name is {{ serverName }} and ID is {{ serverID }}. It's currently {{ getServerStatus() }} </p> -->
-
-<!-- This is 2 way binding -->
-<label>Username</label>
-<input
-  type="text"
-  class = "form-control"
-  [(ngModel)]="userName">
-
-  <!-- Button uses property binding on disable and event binding on click -->
-<button
-class = "btn btn-primary"
-[disabled] = "isUserNameEmpty"
-(click)="onUserNameUpdate()">
-  This is a submit button which will make input as empty
-</button>
-
-<!-- This is String Interpolation -->
-<hr>
-<p> {{ userName }}</p>
+<p>Yo, the server name is {{ serverName }} and ID is {{ serverID }}. It's currently {{ getServerStatus() }} </p>
 
 
